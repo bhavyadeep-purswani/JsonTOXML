@@ -1,6 +1,6 @@
 # JsonToXML
 
-A module to convert JSON to XML format.
+A Python module to convert JSON to XML format.
 
 # Details
 
