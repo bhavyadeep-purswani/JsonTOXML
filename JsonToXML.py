@@ -12,7 +12,7 @@ def _addSubList(root,key1,data):
         if type(data[key]) in (list,):
             _addSubList(root,data[key])
             continue
-        ET.SubElement(root,key).text=str(data[key])
+        ET.SubElement(root,str(key)).text=str(data[key])
         
 
 def _addSubDict(root,data):
@@ -24,7 +24,7 @@ def _addSubDict(root,data):
         if type(data[key]) in (list,):
             _addSubList(root,key,data[key])
             continue
-        ET.SubElement(root,key).text=str(data[key])
+        ET.SubElement(root,str(key)).text=str(data[key])
 
 
 def _jsontoxml(dictionary,rootName="root"):
